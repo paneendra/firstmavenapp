@@ -44,6 +44,30 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- On prem deployment -->
+			<plugin>
+    <groupId>org.mule.tools.maven</groupId>
+    <artifactId>mule-maven-plugin</artifactId>
+    <version>2.0</version>
+    <configuration>
+        <deploymentType>arm</deploymentType>
+        <username>paneeendra</username>
+        <password>Vang0l88!</password>
+        <target>myDev</target>
+        <!-- One of: server, serverGroup, cluster: -->
+        <targetType>server</targetType>
+        <environment>Production</environment>
+    </configuration>
+    <executions>
+        <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <goals>
+                <goal>deploy</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
