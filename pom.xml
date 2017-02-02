@@ -21,14 +21,14 @@
 
 	<build>
 		<plugins>
-			<!--  <plugin>
+			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>2.0</version>
 				<configuration>
 					<deploymentType>cloudhub</deploymentType>
 					<muleVersion>3.7.4</muleVersion>
-					<username>paneeendra</username>
+					<username>paneendra_vr88</username>
 					<password>Vang0l88!</password>
 					<workerType>Micro</workerType>
 					<redeploy>true</redeploy>
@@ -43,9 +43,9 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin> -->
+			</plugin>
 			<!-- On prem deployment -->
-			<plugin>
+			<!-- <plugin>
     <groupId>org.mule.tools.maven</groupId>
     <artifactId>mule-maven-plugin</artifactId>
     <version>2.0</version>
@@ -54,7 +54,6 @@
         <username>paneeendra</username>
         <password>Vang0l88!</password>
         <target>myDev</target>
-        <!-- One of: server, serverGroup, cluster: -->
         <targetType>server</targetType>
         <environment>Production</environment>
     </configuration>
@@ -67,7 +66,7 @@
             </goals>
         </execution>
     </executions>
-</plugin>
+</plugin>-->
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
